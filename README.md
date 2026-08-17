@@ -7,7 +7,8 @@ A product launch landing page for a fictional spatial computing operating system
 
 **[View live site](https://lumina-os-seven.vercel.app/)**
 
-![Lumina OS landing page](ADD_SCREENSHOT_HERE)
+<img width="1076" height="16384" alt="lumina-os-seven vercel app_" src="https://github.com/user-attachments/assets/4f4e0ff2-5991-4f9d-835c-8ffdd660eb6a" />
+
 
 ## About
 
