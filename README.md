@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/31126971/README.md)
-# Lumina OS — Landing Page
+# Lumina OS, Landing Page
 
-A prod# Lumina OS — Landing Page
+A prod# Lumina OS, Landing Page
 
 A product launch landing page for a fictional spatial computing operating system, built as a frontend engineering exercise. The design brief called for layered glassmorphism on a near-black canvas; the engineering brief called for it to stay fast and accessible anyway.
 
