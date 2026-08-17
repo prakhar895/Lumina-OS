@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #090a0d;
+    --bg-surface: #0f1218;
+    --bg-surface-elevated: #151a23;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(125, 211, 252, 0.3);
+    --accent-cyan: #7dd3fc;
+    --accent-blue: #38bdf8;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --hero-parallax: 0px;
+    --hero-rotate: 0deg;
+  }
+
+  html {
+    color-scheme: dark;
+    background-color: #090a0d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    background-color: #090a0d;
+    color: #f8fafc;
+  }
+}
+
+/* Glass surface fallback rules for performance and browser compatibility */
+.glass-surface {
+  background-color: #10141d; /* Solid fallback */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+  .glass-surface-active {
+    background-color: rgba(15, 18, 26, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Focus indicator meeting 3:1 contrast against glass */
+*:focus-visible {
+  outline: 2px solid #38bdf8 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Custom scrollbar for clean aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Hex grid background decoration */
+.bg-hex-pattern {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+}
+
+/* Reduced motion constraints */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .parallax-layer {
+    transform: none !important;
+  }
+}

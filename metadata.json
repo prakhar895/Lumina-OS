@@ -1,0 +1,8 @@
+{
+  "name": "Remix Lumina OS",
+  "description": "Next-generation spatial computing operating system featuring neural rendering, volumetric logic, quantum state processing, and sub-millimeter haptic mesh technology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
