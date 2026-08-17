@@ -89,7 +89,7 @@ Five sections: hero with layered depth composition, a six-card feature grid with
 
 **Accessibility.** Semantic landmarks, a single `h1`, logical heading order, and a skip link. Feature toggles are real checkbox inputs with accessible labels, visually restyled, with state conveyed through border weight and a text label rather than colour alone. The capability showcase is a proper tab pattern — roving tabindex, arrow key navigation, `aria-selected`, `aria-controls`, and matching tabpanel roles. Focus rings meet 3:1 contrast against the glass surfaces, which is the usual failure point on dark translucent designs.
 
-**Budget.** Under 100KB of JavaScript gzipped. No animation library and no 3D library — CSS transitions and the Web Animations API only. Self-hosted variable font as woff2, subset to latin, preloaded, with `font-display: swap` and no external font request. Hero visual served as AVIF with a WebP fallback, explicit dimensions, preloaded; everything below the fold is lazy loaded. Target was Lighthouse 100 across all four categories with zero cumulative layout shift.
+**Budget.** Under 100KB of JavaScript gzipped. No animation library and no 3D library — CSS transitions and the Web Animations API only. Self-hosted variable font as woff2, subset to latin, preloaded, with `font-display: swap` and no external font request. Hero visual served as AVIF with a WebP fallback, explicit dimensions, preloaded; everything below the fold is lazy loaded. Built against a target of Lighthouse 100 across all four categories. Current scores on the deployed build: 91 performance, 95 accessibility, 100 best practices, 100 SEO.
 
 ## Built with
 
