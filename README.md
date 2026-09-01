@@ -67,38 +67,24 @@ npm run preview
 
 ```
 src/
-├── data/
-│   ├── features.ts          Six feature cards: title, body copy, icon key
-│   ├── capabilities.ts      Four showcase entries with preview captions
-│   └── specs.ts             Specification label/value pairs
-├── lib/
-│   ├── tokens.ts            Colour, radius, spacing and type constants
-│   └── featureReducer.ts    Toggle state, actions, initial state
-├── hooks/
-│   ├── useReveal.ts         IntersectionObserver entrance animation
-│   ├── useParallax.ts       Single rAF handler writing CSS custom properties
-│   ├── useReducedMotion.ts  prefers-reduced-motion listener
-│   └── useTabList.ts        Roving tabindex and arrow key navigation
 ├── components/
-│   ├── GlassPanel.tsx       Shared blurred surface with solid fallback
-│   ├── Hero.tsx             Headline, buttons, receding spatial panels
-│   ├── FeatureGrid.tsx      Six cards driven by the reducer
-│   ├── FeatureCard.tsx      Restyled checkbox toggle with state label
-│   ├── Showcase.tsx         Tablist, tabpanels, large preview panel
-│   ├── SpecTable.tsx        Two-column table, hairline dividers
-│   ├── ClosingCta.tsx       Centered headline and single button
-│   ├── Footer.tsx           Four link columns and fine print
-│   └── SkipLink.tsx         Skip to main content
-├── styles/
-│   ├── tokens.css           Design tokens as CSS custom properties
-│   └── index.css            Tailwind layers, @font-face, focus ring
-├── App.tsx                  Landmarks, section order, state wiring
-└── main.tsx                 Entry point
-public/
-├── fonts/                   Variable woff2, latin subset, preloaded
-└── media/                   Hero visual as AVIF with WebP fallback
-.github/workflows/deploy.yml  Builds and publishes to Pages on push to main
-DESIGN.md                     Token reference the implementation is held to
+│   ├── Navigation.tsx          Section navigation
+│   ├── HeroSection.tsx         Headline, buttons, layered spatial panels
+│   ├── FeatureToggles.tsx      Feature grid with restyled checkbox toggles
+│   ├── CapabilityShowcase.tsx  Tablist, tabpanels, large preview panel
+│   ├── ArchitectureSection.tsx System architecture breakdown
+│   ├── HardwareSpecs.tsx       Two-column spec table, hairline dividers
+│   ├── EnterpriseSection.tsx   Enterprise positioning and call to action
+│   ├── PreOrderModal.tsx       Pre-order dialog
+│   ├── LegalViews.tsx          Disclaimer and fine print views
+│   └── Footer.tsx              Link columns and fine print
+├── types.ts                    Shared type definitions
+├── App.tsx                     Section order, state, wiring
+├── index.css                   Tailwind layers and design tokens
+└── main.tsx                    Entry point
+assets/                         AI Studio project files
+index.html                      Entry document, font and asset preloads
+vite.config.ts                  Build configuration
 ```
 ---
 ## Notes
