@@ -21,7 +21,7 @@ The goal was to build the design as specified without compromising on any of tha
 - Near-black base (`#08090B`) with translucent glass surfaces, 8% white borders, and soft inner highlights on the top edge of each card
 - Pale ice blue (`#A8D8F0`) reserved exclusively for interactive elements
 - Sodium orange (`#E8763A`) as a warm counterpoint, used exactly twice across the entire page
-- Geometric grotesque type, tight tracking on headlines, wide tracking on small-caps labels
+- Geometric grotesque type - tight tracking on headlines, wide tracking on small-caps labels
 - Desktop-first at 1440px, with a mobile layout at 390px
 - All text meets WCAG AA contrast against the blurred surfaces behind it
 
