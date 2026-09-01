@@ -49,8 +49,7 @@ The interface was designed in Google Stitch from a written brief, then implement
 
 ---
 
-Fictional concept. Built as a frontend engineering exercise.
-uct launch landing page for a fictional spatial computing operating system, built as a frontend engineering exercise. The design brief called for layered glassmorphism on a near-black canvas; the engineering brief called for it to stay fast and accessible anyway.
+A product launch landing page for a fictional spatial computing operating system, built as a frontend engineering exercise. The design brief called for layered glassmorphism on a near-black canvas; the engineering brief called for it to stay fast and accessible anyway.
 
 **[View live site](https://lumina-os-seven.vercel.app/)**
 
@@ -147,10 +146,6 @@ public/
 .github/workflows/deploy.yml  Builds and publishes to Pages on push to main
 DESIGN.md                     Token reference the implementation is held to
 ```
-
-## Process
-
-The interface was designed in Google Stitch from a written brief, then implemented in Google AI Studio against that markup and a design token file. The full design and implementation prompts are included in this repository.
 
 ---
 
