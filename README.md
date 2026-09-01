@@ -100,8 +100,59 @@ Five sections: hero with layered depth composition, a six-card feature grid with
 ## Running locally
 
 ```bash
+git clone https://github.com/prakhar895/lumina-os.git
+cd lumina-os
 npm install
 npm run dev
+```
+
+No API keys, no environment variables, no backend, no external services. Fonts and imagery are self-hosted, so the page makes zero third-party network requests at runtime.
+
+To check the production build, including the Pages base path:
+
+```bash
+npm run build
+npm run preview
+```
+
+`vite.config.js` sets `base: '/lumina-os/'`. Change it if you fork this under a different repository name, or the built asset paths will 404 on Pages.
+
+## Structure
+
+```
+src/
+├── data/
+│   ├── features.ts          Six feature cards: title, body copy, icon key
+│   ├── capabilities.ts      Four showcase entries with preview captions
+│   └── specs.ts             Specification label/value pairs
+├── lib/
+│   ├── tokens.ts            Colour, radius, spacing and type constants
+│   └── featureReducer.ts    Toggle state, actions, initial state
+├── hooks/
+│   ├── useReveal.ts         IntersectionObserver entrance animation
+│   ├── useParallax.ts       Single rAF handler writing CSS custom properties
+│   ├── useReducedMotion.ts  prefers-reduced-motion listener
+│   └── useTabList.ts        Roving tabindex and arrow key navigation
+├── components/
+│   ├── GlassPanel.tsx       Shared blurred surface with solid fallback
+│   ├── Hero.tsx             Headline, buttons, receding spatial panels
+│   ├── FeatureGrid.tsx      Six cards driven by the reducer
+│   ├── FeatureCard.tsx      Restyled checkbox toggle with state label
+│   ├── Showcase.tsx         Tablist, tabpanels, large preview panel
+│   ├── SpecTable.tsx        Two-column table, hairline dividers
+│   ├── ClosingCta.tsx       Centered headline and single button
+│   ├── Footer.tsx           Four link columns and fine print
+│   └── SkipLink.tsx         Skip to main content
+├── styles/
+│   ├── tokens.css           Design tokens as CSS custom properties
+│   └── index.css            Tailwind layers, @font-face, focus ring
+├── App.tsx                  Landmarks, section order, state wiring
+└── main.tsx                 Entry point
+public/
+├── fonts/                   Variable woff2, latin subset, preloaded
+└── media/                   Hero visual as AVIF with WebP fallback
+.github/workflows/deploy.yml  Builds and publishes to Pages on push to main
+DESIGN.md                     Token reference the implementation is held to
 ```
 
 ## Process
