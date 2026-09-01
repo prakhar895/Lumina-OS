@@ -56,7 +56,7 @@ npm run dev
 
 No API keys, no environment variables, no backend, no external services. Fonts and imagery are self-hosted, so the page makes zero third-party network requests at runtime.
 
-To check the production build, including the Pages base path:
+To check the production build:
 
 ```bash
 npm run build
