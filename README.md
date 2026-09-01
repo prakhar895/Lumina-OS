@@ -43,13 +43,6 @@ Five sections: hero with layered depth composition, a six-card feature grid with
 - TypeScript
 - Tailwind CSS
 
-## Running locally
-
-```bash
-npm install
-npm run dev
-```
-
 ## Process
 
 The interface was designed in Google Stitch from a written brief, then implemented in Google AI Studio against that markup and a design token file. The full design and implementation prompts are included in this repository.
