@@ -46,7 +46,6 @@ Five sections: hero with layered depth composition, a six-card feature grid with
 ## Process
 
 The interface was designed in Google Stitch from a written brief, then implemented in Google AI Studio against that markup and a design token file. The full design and implementation prompts are included in this repository.
-A product launch landing page for a fictional spatial computing operating system, built as a frontend engineering exercise. The design brief called for layered glassmorphism on a near-black canvas; the engineering brief called for it to stay fast and accessible anyway.
 
 ---
 
