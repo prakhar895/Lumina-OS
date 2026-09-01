@@ -100,7 +100,7 @@ public/
 .github/workflows/deploy.yml  Builds and publishes to Pages on push to main
 DESIGN.md                     Token reference the implementation is held to
 ```
-
 ---
+## Notes
 
 Fictional concept. Built as a frontend engineering exercise.
